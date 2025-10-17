@@ -479,25 +479,25 @@ def parse_arguments():
         help="Transport for the MCP server",
         default="stdio",
     )
-    parser.add_argument(
-        "--host",
-        required=False,
-        help="Host address to bind the server to (default: 0.0.0.0)",
-        default="0.0.0.0",
-    )
-    parser.add_argument(
-        "--port",
-        required=False,
-        type=int,
-        help="Port number for the server to listen on (default: 9000)",
-        default=9000,
-    )
-    parser.add_argument(
-        "--endpoint",
-        required=False,
-        help="Endpoint path for the MCP server (default: /mcp)",
-        default="/mcp",
-    )
+    # parser.add_argument(
+    #     "--host",
+    #     required=False,
+    #     help="Host address to bind the server to (default: 0.0.0.0)",
+    #     default="0.0.0.0",
+    # )
+    # parser.add_argument(
+    #     "--port",
+    #     required=False,
+    #     type=int,
+    #     help="Port number for the server to listen on (default: 9000)",
+    #     default=9000,
+    # )
+    # parser.add_argument(
+    #     "--endpoint",
+    #     required=False,
+    #     help="Endpoint path for the MCP server (default: /mcp)",
+    #     default="/mcp",
+    # )
 
     return parser.parse_args()
 
